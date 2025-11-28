@@ -1,0 +1,49 @@
+# ============================================
+# Synevola - Requirements
+# Transcription & Résumé aidé par IA en local
+# ============================================
+
+# --- Core ---
+streamlit>=1.33.0
+numpy>=1.24.0
+requests>=2.28.0
+soundfile>=0.12.0
+
+# --- Audio Processing ---
+pydub>=0.25.1
+# Nécessite ffmpeg installé sur le système :
+# Windows: choco install ffmpeg
+# macOS: brew install ffmpeg
+# Linux: sudo apt install ffmpeg
+
+# --- Speech-to-Text ---
+# WhisperX (recommandé pour diarisation)
+# pip install git+https://github.com/m-bain/whisperx.git
+faster-whisper>=1.0.0
+openai-whisper>=20231117
+
+# --- Diarisation ---
+pyannote.audio>=3.1.0
+# Nécessite un token HuggingFace pour pyannote :
+# export HF_TOKEN=your_token_here
+
+# --- Tokenization ---
+transformers>=4.36.0
+tiktoken>=0.5.0
+
+# --- GPU Support (optionnel mais recommandé) ---
+# Pour CUDA, installer torch séparément :
+# pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+torch>=2.0.0
+
+# --- Export Documents ---
+python-docx>=1.1.0
+
+# --- Audio Recording (optionnel) ---
+# Choisir UN des deux :
+streamlit-audiorecorder>=0.0.5
+# OU
+# streamlit-mic-recorder>=0.0.8
+
+# --- Utilitaires ---
+pathlib>=1.0.1
