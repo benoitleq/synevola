@@ -49,7 +49,7 @@ Synevola est une application de transcription audio médicale avec diarisation (
 ### 1. Cloner le repository
 
 ```bash
-git clone https://github.com/votre-username/synevola.git
+git clone https://github.com/benoitleq/synevola.git
 cd synevola
 ```
 
